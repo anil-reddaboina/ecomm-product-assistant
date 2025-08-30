@@ -1,0 +1,4 @@
+langchain
+langchain_core
+pydantic
+python-dotenv
