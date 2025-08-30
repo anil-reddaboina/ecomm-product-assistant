@@ -1,5 +1,6 @@
-langchain==0.3.27
-langchain_core==0.3.75
-pydantic==2.8.2
-python-dotenv==0.21.0
-streamlit==1.37.1
+ipykernel
+langchain
+langchain_core
+pydantic
+python-dotenv
+streamlit
