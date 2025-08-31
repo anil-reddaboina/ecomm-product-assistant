@@ -1,10 +1,20 @@
 import importlib.metadata
 packages = [
-    "langchain",
-    "python-dotenv",
-    "langchain_core",
+    "beautifulsoup4",
+    "fastapi",
+    "html5lib",
     "pydantic",
-    "streamlit",
+    "requests",
+    "selenium",
+    "scikit-learn",
+    "uvicorn",
+    "xgboost",
+    "yfinance",
+    "pytest",
+    "pytest-cov",
+    "langchain",
+    "langchain-openai",
+    "langchain_core" 
 ]
 for pkg in packages:
     try:
