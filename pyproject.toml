@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools>=68"]         # PEP 660 editable support ke liye naya setuptools
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "ecomm-product-assistant"
 version = "0.1.0"
@@ -23,3 +27,13 @@ dependencies = [
     "undetected-chromedriver==3.5.5",
     "uvicorn==0.35.0",
 ]
+
+authors = [{ name = "Anil Reddaboina" }]
+license = { text = "Proprietary" }
+
+[project.scripts]
+ecomm-assistant = "main:main"
+
+[tool.setuptools.packages.find]
+where = ["product_assistant"]
+include = ["product_assistant*"]

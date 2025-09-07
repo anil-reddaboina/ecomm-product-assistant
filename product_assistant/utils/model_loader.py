@@ -8,7 +8,12 @@ from langchain_groq import ChatGroq
 from product_assistant.logger import GLOBAL_LOGGER as log
 from product_assistant.exception.custom_exception import ProductAssistantException
 import asyncio
+import sys
+from pathlib import Path
 
+# Add the project root to the Python path for direct script execution
+project_root = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(project_root))
 
 class ApiKeyManager:
     REQUIRED_KEYS = ["GROQ_API_KEY", "GOOGLE_API_KEY"]

@@ -22,6 +22,7 @@ class FlipkartScraper:
         driver = uc.Chrome(options=options,use_subprocess=True)
 
         if not product_url.startswith("http"):
+            driver.quit()
             return "No reviews found"
 
         try:
