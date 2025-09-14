@@ -18,5 +18,6 @@ uvicorn==0.35.0
 structlog==25.4.0
 pandas==2.3.2
 langgraph==0.6.7
+ragas==0.3.4
 
 -e .
