@@ -2,11 +2,11 @@ import os
 import sys
 import json
 from dotenv import load_dotenv
-from product_assistant.utils.config_loader import load_config
+from utils.config_loader import load_config
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
 from langchain_groq import ChatGroq
-from product_assistant.logger import GLOBAL_LOGGER as log
-from product_assistant.exception.custom_exception import ProductAssistantException
+from logger import GLOBAL_LOGGER as log
+from exception.custom_exception import ProductAssistantException
 import asyncio
 import sys
 from pathlib import Path

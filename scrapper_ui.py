@@ -1,7 +1,7 @@
 
 import streamlit as st
-from product_assistant.etl.data_scrapper import FlipkartScraper
-from product_assistant.etl.data_ingestion import DataIngestion
+from etl.data_scrapper import FlipkartScraper
+from etl.data_ingestion import DataIngestion
 import os
 
 flipkart_scraper = FlipkartScraper()

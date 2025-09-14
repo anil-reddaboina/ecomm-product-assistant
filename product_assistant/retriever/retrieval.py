@@ -2,10 +2,10 @@ import os
 from langchain_astradb import AstraDBVectorStore
 from typing import List
 from langchain_core.documents import Document
-from product_assistant.utils.model_loader import ModelLoader
-from product_assistant.utils.config_loader import load_config
+from utils.model_loader import ModelLoader
+from utils.config_loader import load_config
 from dotenv import load_dotenv
-from langchain.chains import LLMChainFilter  # Import LLMChainFilter
+from langchain.retrievers.document_compressors import LLMChainFilter
 from langchain.retrievers import ContextualCompressionRetriever
 import sys
 from pathlib import Path
